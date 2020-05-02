@@ -1,0 +1,7 @@
+applications:
+- name: intro-to-cloud
+  memory: 30M
+  buildpacks: 
+  - https://github.com/cloudfoundry/python-buildpack.git
+  command: python flaskblog.py
+  random-route: true
